@@ -29,8 +29,6 @@ print("Area is \(square5.area)")
 square5.lengthOfSide = 9.7
 print("Area is \(square5.area)")
 
-
-
 class Square2 {
     var topLeftCorner: (Double, Double)
     var lengthOfSide: Double
@@ -48,8 +46,16 @@ class Square2 {
         self.lengthOfSide = lengthOfSide
     }
 }
+let test = Square2(topLeftCorner: (5.8,6.7), lengthOfSide: (7.0))
+
+print(test.area)
+
+test.area = 121.0
+print(test.lengthOfSide)
 
 var square6 = Square2(topLeftCorner: (10.0, 10.0), lengthOfSide: 10.0)
 print("Area is 100.0? \(square6.area)")
 square6.area = 144.0
 print("Length of side is 12.0? \(square6.lengthOfSide)")
+
+// Done reading.
